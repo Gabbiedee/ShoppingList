@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Shopping List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container p-3">
+      <div class="m-auto sm: 576px w-100 d-flex text-center">
+        <img
+          class="img-fluid"
+          style="max-width: 50%; height: 100px; border-radius: 50px"
+          src="./asset/listimg.jpeg"
+          alt="Shopping-list Image"
+        />
+        <h1 class="m-auto">shopping list</h1>
+      </div>
+    </div>
+    <div class="container">
+      <form id="form">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="form-input"
+            placeholder="Enter Item"   
+          />
+        </div>
+       <button type="submit" id="btn"  class="btn btn-dark mt-3">+ Add Item</button>
+      </form>
+    </div>
+    <div class="container">
+      <form>
+        <div class="filter">
+          <input
+            type="text"
+            class="form-input-filter"
+            id="form-filter"
+            placeholder="Filter Item"
+            
+          />
+        </div>
+      </form>
+    </div>
+    <div class="container item-form">
+    </div>
+    <div class="container clear-all">
+        <button class="clear-btn">Clear All</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
